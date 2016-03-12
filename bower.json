@@ -1,6 +1,6 @@
 ﻿{
 	"name": "DataWatcher",
-	"main": "datawatcher.js",
+	"main": "DataWatcher.js",
 	"description": "DataWatcher can be used to observe changes on objects and arrays",
 	"authors": ["Marco Marchiò <marco.mm89@gmail.com>"],
 	"license": "MIT",
