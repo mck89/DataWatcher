@@ -1,4 +1,4 @@
-﻿{
+{
 	"name": "DataWatcher",
 	"main": "DataWatcher.js",
 	"description": "DataWatcher can be used to observe changes on objects and arrays",
