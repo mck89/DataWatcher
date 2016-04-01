@@ -574,35 +574,11 @@ QUnit.test("Array.splice", function(assert) {
 });
 
 QUnit.test("Array.sort", function(assert) {
-	assert.expect(17);
+	assert.expect(1);
 	
 	var struct = [4, 3, 2, 1],
 		w = new DataWatcher(struct),
 		data = w.getData();
-	
-	w.watch(function (e) {
-		if (e.path[0] === "0") {
-			assert.deepEqual(e.path, ["0"]);
-			assert.strictEqual(e.oldValue, 4);
-			assert.strictEqual(e.newValue, 1);
-			assert.strictEqual(e.type, DataWatcher.type.MODIFIED);
-		} else if (e.path[0] === "1") {
-			assert.deepEqual(e.path, ["1"]);
-			assert.strictEqual(e.oldValue, 3);
-			assert.strictEqual(e.newValue, 2);
-			assert.strictEqual(e.type, DataWatcher.type.MODIFIED);
-		} else if (e.path[0] === "2") {
-			assert.deepEqual(e.path, ["2"]);
-			assert.strictEqual(e.oldValue, 2);
-			assert.strictEqual(e.newValue, 3);
-			assert.strictEqual(e.type, DataWatcher.type.MODIFIED);
-		} else if (e.path[0] === "3") {
-			assert.deepEqual(e.path, ["3"]);
-			assert.strictEqual(e.oldValue, 1);
-			assert.strictEqual(e.newValue, 4);
-			assert.strictEqual(e.type, DataWatcher.type.MODIFIED);
-		}
-	});
 	
 	data.sort();
 	assert.deepEqual(data, [1, 2, 3, 4]);
