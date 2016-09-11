@@ -100,3 +100,7 @@ w.watch("*", function (e) {
 - Chrome: 49+
 - Edge: 13+ (Edge 13 has a bug with Object.prototype.toString called on arrays wrapped with DataWatcher, it returns always [Object object])
 - Node: 6+
+
+### Install using npm
+You can install DataWatcher via npm using:
+```npm install datawatcher```
