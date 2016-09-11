@@ -1,0 +1,25 @@
+{
+    "name": "datawatcher",
+    "version": "1.0.0",
+    "description": "\u001b[2~DataWatcher can be used to observe changes on objects and arrays",
+    "main": "DataWatcher.js",
+    "directories": {
+        "test": "tests"
+    },
+    "scripts": {
+        "test": "qunit -c './DataWatcher.min' -t tests/tests.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mck89/DataWatcher.git"
+    },
+    "devDependencies": {
+        "qunit": "^0.9.1"
+    },
+    "author": "Marco Marchiò",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/mck89/DataWatcher/issues"
+    },
+    "homepage": "https://github.com/mck89/DataWatcher#readme"
+}
