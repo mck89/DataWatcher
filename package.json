@@ -1,7 +1,7 @@
 {
     "name": "datawatcher",
     "version": "1.0.0",
-    "description": "\u001b[2~DataWatcher can be used to observe changes on objects and arrays",
+    "description": "DataWatcher can be used to observe changes on objects and arrays",
     "main": "DataWatcher.js",
     "directories": {
         "test": "tests"
