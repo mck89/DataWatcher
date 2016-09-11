@@ -95,9 +95,8 @@ w.watch("*", function (e) {
 });
 ```
 
-### Browsers support
+### Support
 - Firefox: 18+
 - Chrome: 49+
 - Edge: 13+ (Edge 13 has a bug with Object.prototype.toString called on arrays wrapped with DataWatcher, it returns always [Object object])
-
-This library is made for browsers, right now Node.js does not support ES6 Proxy so it won't work.
+- Node: 6+
